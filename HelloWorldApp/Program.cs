@@ -17,7 +17,16 @@ public static void Main(string[] arg){
     A.bark();
     A=new Crow();
     A.bark();
+
+    PaymentSystem paymentsystem;
+    paymentsystem=new upiPayment();
+    paymentsystem.PaymentStarted();
+    paymentsystem.pay();
+    paymentsystem=new cardPayment();
+    paymentsystem.PaymentStarted();
+    paymentsystem.pay();
 }
+
 
 }
 
